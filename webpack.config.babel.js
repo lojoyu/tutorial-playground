@@ -31,6 +31,9 @@ module.exports = {
 				// 配置 name 屬性 (第二步)
 				name: '[name].[ext]',
 			}
+		},{
+			test: /\.glsl$/,
+			loader: 'webpack-glsl-loader'
 		}]
 	},
 	plugins: [
