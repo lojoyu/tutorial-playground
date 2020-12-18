@@ -120,7 +120,7 @@ let p5canvas = function(p) {
             y.push(graph[i]*p.windowHeight)
         }
         //console.log(graph.length);
-        const windowSize = 2
+        const windowSize = 3
         const xs = smooth(x, windowSize)
         const ys = smooth(y, windowSize)
         for (let i=0; i<xs.length; i++){
