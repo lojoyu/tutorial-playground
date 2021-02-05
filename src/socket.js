@@ -1,11 +1,11 @@
 import io from 'socket.io-client';
-import {changeBgColor, changeBgPos} from './index2.js';
+import {changeBgColor, changeBgPos} from './index.js';
 import {showShape, showText, showGraph} from './sketch.js';
 import {newSound, changeFilter} from './sound.js';
-//var serverIP = 'https://tutorial-playground-server.herokuapp.com';
-var serverIP = 'https://osc-server-template.glitch.me/';
+import {DEFAULT_IP} from './config';
+
 var socket;
-connectServer('');
+var serverIP = DEFAULT_IP;
 
 export function connectServer(ip) {
 	console.log('connecting to server...');
